@@ -13,7 +13,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '5997447'))
 API_HASH = environ.get('API_HASH', '04fbdff99ed5edff6dfdcc4ef710d04e')
-BOT_TOKEN = environ.get('BOT_TOKEN', '5635181453:AAGDhU4qCnYDuz0XGcQ-XM9qeHSWMPoHvME')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6682653076:AAGvvdmboQ2Js9HLeF_UUlCFwaexUwc1aK4')
 
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
@@ -30,9 +30,9 @@ auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Dynasty:212002@dynasty.m47qtum.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Dynasty")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Dynasty')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Testing:212002@testing.7plrokt.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Testing")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Testing')
 
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001683103329'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '5310501360')
@@ -64,7 +64,7 @@ LOG_STR += (f"MAX_LIST_ELM Found, long list will be shortened to first {MAX_LIST
 LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
 
 G_FILTER = bool(environ.get("G_FILTER", True))
-SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS',1300))
+SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS',1200))
 SELF_DELETE = environ.get('SELF_DELETE', True)
 if SELF_DELETE == "True":
     SELF_DELETE = True
